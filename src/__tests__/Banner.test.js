@@ -2,6 +2,8 @@ import { render, screen } from '@testing-library/react';
 import AppBanner from '../components/shared/AppBanner';
 import userEvent from '@testing-library/user-event';
 
+import { aboutData } from '../data/aboutData';
+
 // This runs before each test. This is good instead of having the component render in each test case
 const setup = () => render(<AppBanner />);
 
@@ -15,8 +17,8 @@ function setupUserEvent(jsx) {
 
 test('it shows the title in the banner', () => {
 	setup();
-	// We expect that the title 'Hi, Iam Stoman' is in the banner component
-	expect(screen.getByText(/Hi, Iam Stoman/i)).toBeInTheDocument();
+	// We expect that the name is in the banner component
+	expect(screen.getByText(/{aboutData.name}}/i)).toBeInTheDocument();
 });
 
 test('can download cv when clicked on download cv button', async () => {
@@ -39,7 +41,8 @@ test('can download cv when clicked on download cv button', async () => {
 	// 	() => downloadLink
 	// );
 
-	// expect(downloadLink.download).toEqual('Stoman-Resume.pdf');
-	// expect(downloadLink.href).toEqual('/files/Stoman-Resume.pdf');
+	// TODO: modify
+	// expect(downloadLink.download).toEqual('-Resume.pdf');
+	// expect(downloadLink.href).toEqual('/files/-Resume.pdf');
 	// expect(downloadLink.click).toHaveBeenCalledTimes(1);
 });

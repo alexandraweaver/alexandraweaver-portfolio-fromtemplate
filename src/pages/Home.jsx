@@ -4,6 +4,7 @@ import AppBanner from '../components/shared/AppBanner';
 import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
 import ProjectSingle from './ProjectSingle';
+import { projectsData } from '../data/projectsData';
 
 const Home = () => {
 	return (
@@ -12,7 +13,7 @@ const Home = () => {
 
 			<ProjectsProvider>
 				{/* <ProjectsGrid/> */}
-				<ProjectSingle/>
+				{projectsData.map((project) => {return <ProjectSingle props={project}/>})}
 			</ProjectsProvider>
 
 			<div className="mt-8 sm:mt-10 flex justify-center">

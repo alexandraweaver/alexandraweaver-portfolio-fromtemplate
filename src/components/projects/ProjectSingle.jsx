@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const ProjectSingle = ({ title, category, image }) => {
+const ProjectSingle = (props) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -12,18 +12,27 @@ const ProjectSingle = ({ title, category, image }) => {
 				delay: 0.15,
 			}}
 		>
-			<Link to="/projects/single-project" aria-label="Single Project">
+			<Link to={ props.url } aria-label={ props.title }>
 				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
 					<div>
-						{/* Since react-icons is being used, the image will be a component, not a string to be used by an img src. */}
-						{ image }
+						{props.imgs.map((img) => {
+							return <img
+								src={img}
+								className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+								alt={props.title}
+								key={props.id}
+							/>
+						})}
 					</div>
 					<div className="text-center px-4 py-6">
 						<p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
-							{title}
+							{ props.title }
 						</p>
 						<span className="text-lg text-ternary-dark dark:text-ternary-light">
-							{category}
+							<b>{ props.category }</b>
+						</span>
+						<span className="text-lg text-ternary-dark dark:text-ternary-light">
+							{ props.desc }
 						</span>
 					</div>
 				</div>

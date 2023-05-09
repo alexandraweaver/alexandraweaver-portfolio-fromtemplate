@@ -1,16 +1,27 @@
-//import ProjectsGrid from '../components/projects/ProjectsGrid';
+import { projectsData } from '../data/projectsData';
 import ProjectSingle from '../components/projects/ProjectSingle';
-import { ProjectsProvider } from '../context/ProjectsContext';
+
+//import ProjectsGrid from '../components/projects/ProjectsGrid';
+//import { ProjectsProvider } from '../context/ProjectsContext';
 
 const Projects = () => {
 	return (
-		<ProjectsProvider>
-			<div className="container mx-auto">
-				{/* <ProjectsGrid /> */}
-				<ProjectSingle />
-			</div>
-		</ProjectsProvider>
+		<>
+			{ projectsData.map((project) => {
+				return <ProjectSingle props={project}/> })
+			}
+		</>
 	);
 };
 
 export default Projects;
+
+
+// return (
+// 		<ProjectsProvider>
+// 			<div className="container mx-auto">
+// 				<ProjectsGrid /> 
+// 				<ProjectSingle />
+// 			</div>
+// 		</ProjectsProvider>
+// 	);
