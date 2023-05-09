@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# alexandraweaver-portfolio-fromtemplate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Started with files from: https://github.com/realstoman/react-tailwindcss-portfolio/
 
-## Available Scripts
 
-In the project directory, you can run:
+## Setup
 
-### `npm start`
+1. Make sure you have Node JS installed. If you don't have it:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   [Download it from nodejs.org](https://nodejs.org)
+-   [Install it using NVM ](https://github.com/nvm-sh/nvm)
+-   If you're on Mac, Homebrew is a good option too:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+brew install node
+```
 
-### `npm test`
+2. Clone the repo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/alexandraweaver/alexandraweaver-portfolio-fromtemplate.git
+```
 
-### `npm run build`
+3. Open the project folder:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+cd alexandraweaver-portfolio-fromtemplate
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Install packages and dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install
+```
 
-### `npm run eject`
+1. Start a local dev server at `http://localhost:3000`:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. ##### Run tests:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm test
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Notes
 
-## Learn More
+-   Always run `npm install` after pulling new changes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# React & TailwindCSS Portfolio - With Dark Mode
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+A simple portfolio starter theme built with React and Tailwind CSS.
 
-### Analyzing the Bundle Size
+![React-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/146666086-28e88beb-c2f0-431f-adfb-2396d8f64c80.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Demo URL
 
-### Making a Progressive Web App
+[https://react-tailwindcss-portfolio.netlify.app](https://react-tailwindcss-portfolio.netlify.app)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-   [React v18](https://reactjs.org) with [React Router v6](https://reactrouter.com)
+-   [Tailwind CSS v3](https://tailwindcss.com)
+-   Context API For State Management
+-   Custom Hooks
+-   Unit Testing
+-   Framer Motion transitions & animations
+-   Reusable components
+-   Dark mode
+-   Projects filter by category
+-   Projects filter by search
+-   Smooth scroll
+-   Counter
+-   Dynamic forms
+-   Back to top button
+-   Download file button
+-   Simple and responsive design
 
-### Deployment
+### To Contribute to this project, read the [Contribution Guidlines](https://github.com/realstoman/react-tailwindcss-portfolio/blob/main/CONTRIBUTING.md)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+### License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT]
