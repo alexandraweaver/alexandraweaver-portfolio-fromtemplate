@@ -11,7 +11,7 @@ import { FaGithubAlt } from 'react-icons/fa';
 export const projectsData = [
 	{
 		id: 1,
-		title: 'Google Health Platform',
+		title: 'Space Mission Exercise',
 		category: 'Web Application',
 		img: FaGithubAlt,
 		ProjectHeader: {

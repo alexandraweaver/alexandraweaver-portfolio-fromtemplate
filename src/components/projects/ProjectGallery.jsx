@@ -6,7 +6,7 @@ const ProjectGallery = () => {
 
 	return (
 		<div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
-			{singleProjectData.ProjectImages.map((project) => {
+			{singleProjectData.imgs.map((project) => {
 				return (
 					<div className="mb-10 sm:mb-0" key={project.id}>
 						<img
