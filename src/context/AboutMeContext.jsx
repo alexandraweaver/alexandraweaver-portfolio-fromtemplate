@@ -1,5 +1,5 @@
 import { useState, createContext } from 'react';
-import { aboutData } from '../data/aboutMeData';
+import { aboutData } from '../data/aboutData';
 import { skillsHeading as skillsPageHeading } from '../data/skillsData';
 import { skillsData as skillsDataJson } from '../data/skillsData';
 

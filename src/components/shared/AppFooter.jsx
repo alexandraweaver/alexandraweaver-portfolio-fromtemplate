@@ -1,39 +1,37 @@
-import {
-	FiGlobe,
-	FiGithub,
-	FiLinkedin,
-} from 'react-icons/fi';
+//import { GrProjects } from 'react-icons/gr';
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
 
 import AppFooterCopyright from './AppFooterCopyright';
-import { aboutData } from '../../data/aboutMeData';
+import { aboutData } from '../../data/aboutData';
 
 const socialLinks = [
-	{
-		id: 1,
-		icon: <FiGlobe />,
-		url: 'https://alexandraweaver-portfolio.onrender.com',
-	},
+	// {
+	// 	id: 1,
+	// 	icon: <GrProjects />,
+	// 	url: aboutData.portfolioUrl,
+	// },
 	{
 		id: 2,
 		icon: <FiGithub />,
-		url: aboutData['github-url'],
+		url: aboutData.githubUrl,
 	},
 	{
 		id: 3,
 		icon: <FiLinkedin />,
-		url: aboutData['linkedin-url'],
+		url: aboutData.linkedinUrl,
 	}
 ];
 
 const AppFooter = () => {
 	return (
 		<div className="container mx-auto">
-			<div className="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
-				{/* Footer social links */}
+			<div className="container mx-auto pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
+				{/* Footer links */}
 				<div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
-					<p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
-						Follow me
-					</p>
+					{/* <p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
+						Links
+					</p> */}
+					
 					<ul className="flex gap-4 sm:gap-8">
 						{socialLinks.map((link) => (
 							<a
@@ -48,9 +46,9 @@ const AppFooter = () => {
 							</a>
 						))}
 					</ul>
+					<br/>
+					<AppFooterCopyright />
 				</div>
-
-				<AppFooterCopyright />
 			</div>
 		</div>
 	);
