@@ -3,8 +3,7 @@ import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import HireMeModal from '../HireMeModal';
-import logoLight from '../../images/logo-light.svg';
-import logoDark from '../../images/logo-dark.svg';
+import logo from '../../images/aaw-logo.png';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
 
@@ -49,15 +48,15 @@ const AppHeader = () => {
 						<Link to="/">
 							{activeTheme === 'dark' ? (
 								<img
-									src={logoDark}
+									src={logo} //logoDark
 									className="w-36"
 									alt="Dark Logo"
 								/>
 							) : (
 								<img
-									src={logoLight}
+									src={logo} //logoLight
 									className="w-36"
-									alt="Dark Logo"
+									alt="Light Logo"
 								/>
 							)}
 						</Link>
@@ -121,13 +120,13 @@ const AppHeader = () => {
 					>
 						About Me
 					</Link>
-					<Link
+					{/*<Link
 						to="/contact"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="Contact"
 					>
 						Contact
-					</Link>
+				</Link> */}
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<span
 							onClick={showHireMeModal}
@@ -155,13 +154,13 @@ const AppHeader = () => {
 					>
 						About Me
 					</Link>
-					<Link
+					{/*<Link
 						to="/contact"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Contact"
 					>
 						Contact
-					</Link>
+			</Link>*/}
 				</div>
 
 				{/* Header right section buttons */}

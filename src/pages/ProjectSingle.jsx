@@ -17,7 +17,9 @@ const ProjectSingle = (props) => {
 			}}
 			className="container mx-auto mt-5 sm:mt-10"
 		>
+			<br/>
 			<ProjectHeader props={props}/>
+			<br/>
 			<ProjectGallery props={props}/>
 		</motion.div>
 	);

@@ -7,18 +7,20 @@ const ProjectGallery = (props) => {
 	//console.log("Props: " + JSON.stringify(props) + ", imgs: " + props.props.props.imgs);
 	
 	return (
-		<div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
-			<div className="mb-10 sm:mb-0" key={props.props.props.id}>
+		<div className="grid container">
+			<div className="grid row" key={props.props.props.id}>
 				{props.props.props.imgs.map((img) => {
 					return (
-						<span className="font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
+						<div className="grid col flex items-center font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
+						
 						<img
 							src={img}
 							className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
 							alt={props.props.props.title}
 							key={props.props.props.id}
 						/>
-					</span>)
+					<br/>
+					</div>)
 				})}
 			</div>
 		</div>

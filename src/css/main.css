@@ -345,7 +345,7 @@ audio,
 iframe,
 embed,
 object {
-  display: block; /* 1 */
+  display: flex; /* 1 */
   vertical-align: middle; /* 2 */
 }
 
@@ -574,7 +574,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 2rem;
 }
 .block {
-  display: block;
+  display: flex;
 }
 .flex {
   display: flex;
@@ -1224,7 +1224,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .sm\:block {
-    display: block;
+    display: flex;
   }
 
   .sm\:flex {

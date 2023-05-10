@@ -1,8 +1,9 @@
 import { useContext } from 'react';
 import AboutMeContext from '../../context/AboutMeContext';
+import { aboutData } from '../../data/aboutData';
 
 const AboutDisplayData = () => {
-	const { aboutData } = useContext(AboutMeContext);
+	//const { aboutData } = useContext(AboutMeContext);
 
 	return (
 		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
