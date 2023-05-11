@@ -16,12 +16,13 @@ const AboutDisplayData = () => {
 			<Grid item xs={12}>
 				<AboutDisplaySubheader/>
 			</Grid>
-			<Grid item xs={12}>
-				<DownloadResumeButton/>
-			</Grid>
-
 		</Grid>
 	);
 };
 
 export default AboutDisplayData;
+
+
+// <Grid item xs={12}>
+// 				<DownloadResumeButton/>
+// 			</Grid>
