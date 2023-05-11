@@ -1,30 +1,39 @@
-import { Link } from 'react-router-dom';
-import AppBanner from '../components/shared/AppBanner';
+//import { Link } from 'react-router-dom';
 //import ProjectsGrid from '../components/projects/ProjectsGrid';
-import { ProjectsProvider } from '../context/ProjectsContext';
-import Button from '../components/reusable/Button';
-import ProjectSingle from './ProjectSingle';
-import { projectsData } from '../data/projectsData';
+// import { ProjectsProvider } from '../context/ProjectsContext';
+// import Button from '../components/reusable/Button';
+// import ProjectSingle from './ProjectSingle';
+// import { projectsData } from '../data/projectsData';
+
+// import { Link } from 'react-router-dom';
+// import { motion } from 'framer-motion';
+
+// import Button from '../components/reusable/Button';
+
+// import { ProjectsProvider } from '../context/ProjectsContext';
+// import ProjectSingle from '../components/projects/ProjectSingle';
+// import { projectsData } from '../data/projectsData';
+
+//import AppBanner from '../components/shared/AppBanner';
+import AboutDisplayData from '../components/about/AboutDisplayData';
+import ProjectPortfolio from '../components/ProjectPortfolio';
+import AllProjectsButton from '../components/AllProjectsButton';
+import ProjectPortfolioHeader from '../components/ProjectPortfolioHeader';
 
 const Home = () => {
 	return (
 		<div className="container mx-auto">
-			<AppBanner></AppBanner>
+			{/*<AppBanner></AppBanner>*/}
+			<AboutDisplayData/>
+			<br/><br/>
 
-			<ProjectsProvider>
-				{/* <ProjectsGrid/> */}
-				{projectsData.map((project) => {return <ProjectSingle props={project}/>})}
-			</ProjectsProvider>
+			<ProjectPortfolioHeader/>
 
-			<div className="mt-8 sm:mt-10 flex justify-center">
-				<Link
-					to="/projects"
-					className="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300"
-					aria-label="All Projects"
-				>
-					<Button title="All Projects" />
-				</Link>
-			</div>
+			<AllProjectsButton/>
+			<br/>
+
+			<ProjectPortfolio/>
+			<br/>
 		</div>
 	);
 };

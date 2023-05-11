@@ -1,28 +1,26 @@
-import { useContext } from 'react';
-import AboutMeContext from '../../context/AboutMeContext';
-import { aboutData } from '../../data/aboutData';
+//import { useContext } from 'react';
+//import AboutMeContext from '../../context/AboutMeContext';
+import { Grid } from '@mui/material';
+import AboutDisplayHeader from './AboutDisplayHeader';
+import AboutDisplaySubheader from './AboutDisplaySubheader';
+import DownloadResumeButton from '../DownloadResumeButton';
 
 const AboutDisplayData = () => {
 	//const { aboutData } = useContext(AboutMeContext);
 
 	return (
-		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
-			<div className="w-full sm:w-1/4 mb-7 sm:mb-0">
-				<img src={ aboutData.img } className="rounded-lg w-96" alt="" />
-			</div>
+		<Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} className="items-center">
+			<Grid item xs={12}>
+				<AboutDisplayHeader/>
+			</Grid>
+			<Grid item xs={12}>
+				<AboutDisplaySubheader/>
+			</Grid>
+			<Grid item xs={12}>
+				<DownloadResumeButton/>
+			</Grid>
 
-			<div className="font-general-regular w-full sm:w-3/4 text-left">
-                <p className="mb-4 text-ternary-dark dark:text-ternary-light text-lg">{aboutData.title}</p>
-			</div>
-
-            <div className="font-general-regular w-full sm:w-3/4 text-left">
-                <p className="mb-4 text-ternary-dark dark:text-ternary-light text-lg">{aboutData.bio}</p>
-			</div>
-
-            <div className="font-general-regular w-full sm:w-3/4 text-left">
-                <p className="mb-4 text-ternary-dark dark:text-ternary-light text-lg">{aboutData.mission}</p>
-			</div>
-		</div>
+		</Grid>
 	);
 };
 

@@ -6,6 +6,7 @@ import HireMeModal from '../HireMeModal';
 import logo from '../../images/aaw-logo.png';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
+//import DownloadResumeButton from '../../components/DownloadResumeButton';
 
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -127,13 +128,14 @@ const AppHeader = () => {
 					>
 						Contact
 				</Link> */}
+
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<span
 							onClick={showHireMeModal}
 							className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
 							aria-label="Hire Me Button"
 						>
-							<Button title="Hire Me" />
+							<Button title="Hire Me" />	
 						</span>
 					</div>
 				</div>
@@ -174,7 +176,7 @@ const AppHeader = () => {
 							<Button title="Hire Me" />
 						</span>
 					</div>
-
+				
 					{/* Theme switcher large screen */}
 					<div
 						onClick={() => setTheme(activeTheme)}
@@ -189,6 +191,8 @@ const AppHeader = () => {
 					</div>
 				</div>
 			</div>
+
+
 			{/* Hire me modal */}
 			<div>
 				{showModal ? (
@@ -199,6 +203,7 @@ const AppHeader = () => {
 				) : null}
 				{showModal ? showHireMeModal : null}
 			</div>
+
 		</motion.nav>
 	);
 };

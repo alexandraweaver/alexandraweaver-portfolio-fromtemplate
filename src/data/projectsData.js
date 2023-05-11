@@ -28,8 +28,17 @@ const project3 = new Project(
     "React",
     "https://rhythm-and-exercise.onrender.com/",
     "In-Progress: Working on an app using React where a user can input a word & the app will return data from multiple dictionary-related APIs.",
-    ["React", "Node", "JavaScript", "APIs"],
+    ["React", "Node", "JavaScript", "APIs", "Material UI"],
     ["project-in-progress.png"]
 );
 
-export const projectsData = [project1, project2, project3];
+const project4 = new Project(
+    "Budgeter Exercise",
+    "React",
+    "https://budgeter-exercise.onrender.com",
+    "In-Progress: React app for budgeting.",
+    ["React", "Node", "JavaScript", "Material UI"],
+    ["project-in-progress.png"]
+);
+
+export const projectsData = [project1, project2, project3, project4];

@@ -9,10 +9,11 @@ const ProjectSingleHeader = (props) => {
 	//const { singleProjectData } = useContext(SingleProjectContext);
 
 	return (
-		<div>
-			<p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
-				{props.props.props.title}
-			</p>
+		<div key={props.props.props.id}>
+			<div className="text-primary-dark dark:text-primary-light">
+				<b>{props.props.props.title}</b>
+			</div>
+			<br/>
 			<Grid container spacing={3}>
 				<Grid item xs={4}>
 					<FiTag/>

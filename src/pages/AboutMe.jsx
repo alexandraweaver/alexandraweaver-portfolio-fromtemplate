@@ -1,5 +1,5 @@
 import AboutDisplayData from '../components/about/AboutDisplayData';
-import AboutCounter from '../components/about/AboutCounter';
+//import AboutCounter from '../components/about/AboutCounter';
 import AboutSkills from '../components/about/AboutSkills';
 import { AboutMeProvider } from '../context/AboutMeContext';
 import { motion } from 'framer-motion';
@@ -15,6 +15,7 @@ const About = () => {
 			>
 				<AboutDisplayData />
 			</motion.div>
+			<br/>
 
 			{/** Counter without paddings */}
 			{/*<motion.div
