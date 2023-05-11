@@ -23,4 +23,13 @@ const project2 = new Project(
     ["todolist-exercise-1.png", "todolist-exercise-2.png"]
 );
 
-export const projectsData = [project1, project2];
+const project3 = new Project(
+    "Rhythm& - Dictionary API Exercise",
+    "React",
+    "https://rhythm-and-exercise.onrender.com/",
+    "In-Progress: Working on an app using React where a user can input a word & the app will return data from multiple dictionary-related APIs.",
+    ["React", "Node", "JavaScript", "APIs"],
+    ["project-in-progress.png"]
+);
+
+export const projectsData = [project1, project2, project3];

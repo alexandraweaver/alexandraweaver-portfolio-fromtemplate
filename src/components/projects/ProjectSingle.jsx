@@ -29,7 +29,7 @@ const ProjectSingle = (props) => {
 					<br/>
 
 					{props.props.imgs.map((img) => {
-						return (<div class="grid col flex items-center font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
+						return (<div class="grid col items-center font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
 							<img
 								src={img}
 								className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
