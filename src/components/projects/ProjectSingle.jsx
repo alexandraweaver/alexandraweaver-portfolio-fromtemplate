@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+import { Container } from '@mui/material';
+
+import { thumbnailCardStyle } from './../../styles/displayStyles';
+
 const ProjectSingle = (props) => {
 	return (
 		<motion.div
@@ -27,18 +31,16 @@ const ProjectSingle = (props) => {
 						{ props.props.desc }
 					</span>
 					<br/>
-
-					{props.props.imgs.map((img, index) => {
-						return (<div key={index} className="grid col items-center font-general-regular ml-2 leading-none text-primary-dark dark:text-primary-light">
-							<img
-								src={img}
-								className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-								alt={props.props.title}
-								key={props.props.id}
-							/>
-							<br/>
-						</div>)
-					})}
+					<Container sx={thumbnailCardStyle}>
+						{props.props.imgs.map((img, index) => {
+							return (
+								<img
+									key={index}
+									src={img}
+									alt={props.props.title}
+								/>
+						)})}
+					</Container>
 				</div>
 			</Link>
 		</motion.div>

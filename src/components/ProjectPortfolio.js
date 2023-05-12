@@ -15,8 +15,8 @@ function ProjectPortfolio() {
             <ProjectsProvider>
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                     {projectsData.map((project, index) => {return (
-                        <Grid item xs={6}>
-                            <ProjectSingle key={index} props={project}/>
+                        <Grid key={index} item xs={6}>
+                            <ProjectSingle props={project}/>
                         </Grid>
                     );})}
                 </Grid>

@@ -1,15 +1,13 @@
 import { Card, CardHeader, CardContent } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import { thumbnailCardStyle } from '../../styles/displayStyles';
 
 const AboutSkillSingle = ({ title, image }) => {
 	return (
-		<Card>
+		<Card sx={thumbnailCardStyle}>
 			<CardHeader title={ title }/>
 			
 			<CardContent>
-				<Grid container justifyContent="center">
-					{ image }
-				</Grid>
+				{image}
 			</CardContent>
 		</Card>
 	);

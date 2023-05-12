@@ -4,6 +4,7 @@ import ProjectHeader from '../components/projects/ProjectHeader';
 //import ProjectRelatedProjects from '../components/projects/ProjectRelatedProjects';
 //import { SingleProjectProvider } from '../context/SingleProjectContext';
 import { motion } from 'framer-motion';
+import { Container } from '@mui/material';
 
 const ProjectSingle = (props) => {
 	return (
@@ -18,9 +19,13 @@ const ProjectSingle = (props) => {
 			className="container mx-auto mt-5 sm:mt-10"
 		>
 			<br/>
-			<ProjectHeader props={props}/>
+			<Container>
+				<ProjectHeader props={props}/>
+			</Container>
 			<br/>
-			<ProjectGallery props={props}/>
+			<Container>
+				<ProjectGallery props={props}/>
+			</Container>
 		</motion.div>
 	);
 };

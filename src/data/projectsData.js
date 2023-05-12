@@ -5,7 +5,7 @@ import Project from '../classes/Project';
 // const imgPathSuffix = "png";
 
 // TODO: refactor project name?
-const project1 = new Project(
+const spaceMission = new Project(
     "Space Mission Exercise",
     "React",
     "https://space-mission-exercise.onrender.com/",
@@ -14,7 +14,7 @@ const project1 = new Project(
     ["space-mission-exercise-1.png", "space-mission-exercise-2.png"]
 );
 
-const project2 = new Project(
+const todoList = new Project(
     "Todo List Exercise",
     "React",
     "https://todolist-exercise.onrender.com/",
@@ -23,7 +23,25 @@ const project2 = new Project(
     ["todolist-exercise-1.png", "todolist-exercise-2.png"]
 );
 
-const project3 = new Project(
+const listExercises = new Project(
+    "List Exercises",
+    "React",
+    "https://lit-lists-exercise.onrender.com/",
+    "Practice displaying data in Lists using React & Material UI.",
+    ["React", "Node", "JavaScript", "Material UI"],
+    ["lit-lists-exercise-1.png", "lit-lists-exercise-2.png"]
+);
+
+const gridExercises = new Project(
+    "Grid Exercises",
+    "React",
+    "https://grid-grind-exercise.onrender.com/",
+    "Practice displaying data in Grids using React & Material UI.",
+    ["React", "Node", "JavaScript", "Material UI"],
+    ["grid-grind-exercise-1.png"]
+);
+
+const rhythmAnd = new Project(
     "Rhythm& - Dictionary API Exercise",
     "React",
     "https://rhythm-and-exercise.onrender.com/",
@@ -32,7 +50,7 @@ const project3 = new Project(
     ["project-in-progress.png"]
 );
 
-const project4 = new Project(
+const budgeter = new Project(
     "Budgeter Exercise",
     "React",
     "https://budgeter-exercise.onrender.com",
@@ -41,4 +59,4 @@ const project4 = new Project(
     ["project-in-progress.png"]
 );
 
-export const projectsData = [project1, project2, project3, project4];
+export const projectsData = [spaceMission, todoList, listExercises, gridExercises, rhythmAnd, budgeter];
