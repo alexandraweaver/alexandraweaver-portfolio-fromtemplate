@@ -15,17 +15,18 @@ export const containerStyle = {
 };
 
 export const currentCardStyle = {
-    display: "flex",
+    display: "fluid",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    verticalAlign:"middle",
     width: "250px",
     margin: "5px",
     height: "auto"
 };
 
 export const thumbnailCardStyle = {
-    display: "flex",
+    display: "fluid",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
@@ -39,6 +40,7 @@ export const projectStyle = {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    verticalAlign:"middle",
     width: "auto",
     margin: "5px",
     height: "auto"

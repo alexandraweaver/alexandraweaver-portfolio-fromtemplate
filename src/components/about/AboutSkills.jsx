@@ -19,12 +19,12 @@ const AboutSkills = () => {
 
 			<br/>
 
-			<Grid container rowSpacing={2} columnSpacing={{ xs: 2, sm: 3, md: 4 }}>
-				{skillsData.map((skill) => {return (
-					<Grid key={skill.id} item xs={4}>
+			<Grid container spacing={2}>
+				{skillsData.map((skill, index) => {return (
+					<Grid item key={index} xs={4}>
 						<AboutSkillSingle
 							title={skill.title}
-							image={skill.img}
+							imgs={skill.imgs}
 						/>
 					</Grid>
 				)})}
