@@ -2,7 +2,7 @@ export const aboutData = {
     "name": "Alexandra Weaver",
 
     // Store this img file in the public folder for this path to be valid
-    "img": "aaw-headshot.jpg",
+    "img": "aaw-picture.jpg",
 
     "title": "React Specialist.",
     "subTitle": "Developing code since 2009.",
