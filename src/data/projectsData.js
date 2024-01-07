@@ -41,22 +41,22 @@ const gridExercises = new Project(
     ["grid-grind-exercise-1.png"]
 );
 
-// const rhythmAnd = new Project(
-//     "Rhythm& - Dictionary API Exercise",
-//     "React",
-//     "https://rhythm-and-exercise.onrender.com/",
-//     "In-Progress: Working on an app using React where a user can input a word & the app will return data from multiple dictionary-related APIs.",
-//     ["React", "Node", "JavaScript", "APIs", "Material UI"],
-//     ["project-in-progress.png"]
-// );
+const rhythmAnd = new Project(
+    "Rhythm& - Dictionary API Exercise",
+    "React",
+    "https://rhythm-and-exercise.onrender.com/",
+    "In-Progress: Working on an app using React where a user can input a word & the app will return data from multiple dictionary-related APIs.",
+    ["React", "Node", "JavaScript", "APIs", "Material UI"],
+    ["project-in-progress.png"]
+);
 
-// const budgeter = new Project(
-//     "Budgeter Exercise",
-//     "React",
-//     "https://budgeter-exercise.onrender.com",
-//     "In-Progress: React app for budgeting.",
-//     ["React", "Node", "JavaScript", "Material UI"],
-//     ["project-in-progress.png"]
-// );
+const budgeter = new Project(
+    "Budgeter Exercise",
+    "React",
+    "https://budgeter-exercise.onrender.com",
+    "In-Progress: React app for budgeting.",
+    ["React", "Node", "JavaScript", "Material UI"],
+    ["project-in-progress.png"]
+);
 
 export const projectsData = [spaceMission, todoList, listExercises, gridExercises, rhythmAnd, budgeter];
