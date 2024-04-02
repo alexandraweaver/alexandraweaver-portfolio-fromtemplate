@@ -31,14 +31,7 @@ export const skillsData = [
 		title: 'Babel, Webpack',
 		imgs: [<SiBabel size={iconSize}/>, <SiWebpack size={iconSize}/>],
 	},
-	{
-		title: 'Python, Flask, Django',
-		imgs: [<TbBrandPython size={iconSize}/>, <SiFlask size={iconSize}/>, <TbBrandDjango size={iconSize}/>],
-	},
-	{
-		title: 'Ruby, Rails',
-		imgs: [<DiRuby size={iconSize}/>, <SiRubyonrails size={iconSize}/>],
-	},
+	
 	{
 		title: 'API Architecture, Postman',
 		imgs: [<TbApi size={iconSize}/>, <SiPostman size={iconSize}/>],
@@ -60,8 +53,12 @@ export const skillsData = [
 		imgs: [<FaJava size={iconSize}/>, <SiApachetomcat size={iconSize}/>],
 	},
 	{
-		title: 'C#, .NET',
+		title: 'C#, .NET, MVC, MVVM',
 		imgs: [<TbBrandCSharp size={iconSize}/>, <SiDotnet size={iconSize}/>],
+	},
+	{
+		title: 'VSCode, Eclipse, etc',
+		imgs: [<TbBrandVscode size={iconSize}/>, <SiEclipseide size={iconSize}/>],
 	},
 	{
 		title: 'Bootstrap, React Bootstrap',
@@ -80,8 +77,12 @@ export const skillsData = [
 		imgs: [<SiScrumalliance size={iconSize}/>],
 	},
 	{
-		title: 'VSCode, Eclipse, etc',
-		imgs: [<TbBrandVscode size={iconSize}/>, <SiEclipseide size={iconSize}/>],
+		title: 'Python, Flask, Django',
+		imgs: [<TbBrandPython size={iconSize}/>, <SiFlask size={iconSize}/>, <TbBrandDjango size={iconSize}/>],
+	},
+	{
+		title: 'Ruby, Rails',
+		imgs: [<DiRuby size={iconSize}/>, <SiRubyonrails size={iconSize}/>],
 	}
 ];
 
